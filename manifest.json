@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Filtre à casses bonbons",
+  "version": "1.0",
+  "description": "Masque les posts LinkedIn qui tutoient ou donnent des ordres.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/feed/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png"
+  }
+}
