@@ -1,0 +1,19 @@
+body {
+  min-width: 220px;
+  font-family: Arial, sans-serif;
+  padding: 16px;
+  background: #f3f6f8;
+  color: #222;
+}
+h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+#levelLabel {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #0073b1;
+}
+input[type="range"] {
+  width: 100%;
+}

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "LinkedIn Filtre à casses bonbons",
-  "version": "1.0",
+  "name": "LinkedIn Filtrage P&énibles",
+  "version": "1.1",
   "description": "Masque les posts LinkedIn qui tutoient ou donnent des ordres.",
   "content_scripts": [
     {
@@ -9,6 +9,11 @@
       "js": ["content.js"]
     }
   ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["storage"],
   "icons": {
     "16": "icon.png"
   }
