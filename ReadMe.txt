@@ -1,5 +1,5 @@
-LinkedIn Tutoiement Filter
-LinkedIn Tais toi est une extension Chrome qui masque automatiquement les posts LinkedIn contenant du tutoiement ou des injonctions (ex : « tu », « fais », « arrête », etc.).
+LinkedIn Tais-toi
+LinkedIn Tais-toi est une extension Chrome qui masque automatiquement les posts LinkedIn contenant du tutoiement ou des injonctions (ex : « tu », « fais », « arrête », etc.).
 Cette extension est idéale pour les utilisateurs souhaitant épurer leur fil d’actualité des posts au ton trop familier ou directif.
 
 Fonctionnalités
@@ -25,7 +25,7 @@ Installation
 Téléchargez ou clonez ce repository :
 
 bash
-git clone https://github.com/ton-utilisateur/linkedin-tutoiement-filter.git
+git clone https://github.com/nocomp/Linkedin-Tais-toi.git
 Ouvrez Google Chrome et allez à :
 
 text
@@ -77,5 +77,3 @@ Merci à la communauté des utilisateurs LinkedIn qui souhaitent un fil plus agr
 Extension inspirée par les besoins réels des utilisateurs francophones.
 
 Profitez d’un feed LinkedIn qui vous ressemble ! 🚀
-
-Si tu veux ajouter des captures d’écran ou des exemples d’utilisation, je peux t’aider à les intégrer !
