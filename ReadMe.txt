@@ -3,34 +3,63 @@ LinkedIn Tais toi est une extension Chrome qui masque automatiquement les posts 
 Cette extension est idéale pour les utilisateurs souhaitant épurer leur fil d’actualité des posts au ton trop familier ou directif.
 
 Fonctionnalités
-Masque les posts contenant des mots ou expressions ciblés (tutoiement, impératifs…)
+Filtrage automatique des posts LinkedIn contenant du tutoiement ou des injonctions.
 
-Fonctionne automatiquement sur le fil d’actualité LinkedIn
+Interface graphique accessible depuis l’icône de l’extension, permettant de régler le niveau de filtrage grâce à un curseur intuitif.
 
-Détection en temps réel lors du scroll (scroll infini)
+4 niveaux de filtrage :
 
-Liste de mots-clés personnalisable dans le code
+Désactivé : Aucun filtrage.
+
+Léger : Filtrage minimal (ex : « tu », « fais », « vas-y »).
+
+Modéré : Filtrage étendu à d’autres formes d’injonctions courantes.
+
+Agressif : Filtrage maximal, incluant un large éventail de mots et d’expressions impératives.
+
+Filtrage en temps réel : le niveau de filtrage est appliqué instantanément à votre fil d’actualité LinkedIn, même lors du scroll infini.
+
+Personnalisation facile : la liste des mots-clés pour chaque niveau peut être modifiée dans le code si besoin.
 
 Installation
-Télécharge ou clone ce repository :
+Téléchargez ou clonez ce repository :
 
 bash
 git clone https://github.com/ton-utilisateur/linkedin-tutoiement-filter.git
-Ouvre Google Chrome et va à l’adresse suivante :
+Ouvrez Google Chrome et allez à :
 
 text
 chrome://extensions/
-Active le mode développeur (coin supérieur droit).
+Activez le mode développeur (coin supérieur droit).
 
-Clique sur « Charger l’extension non empaquetée » et sélectionne le dossier du projet.
+Cliquez sur « Charger l’extension non empaquetée » et sélectionnez le dossier du projet.
 
-Rends-toi sur LinkedIn et recharge la page : l’extension est active !
+Rendez-vous sur LinkedIn et rechargez la page : l’extension est active !
 
-Personnalisation
-Pour ajouter ou modifier les mots-clés filtrés, édite le fichier content.js et ajuste la variable keywords selon tes préférences.
+Utilisation
+Cliquez sur l’icône de l’extension dans la barre d’outils Chrome.
+
+Ajustez le curseur dans la fenêtre popup pour choisir le niveau de filtrage souhaité :
+
+Désactivé : aucun post masqué.
+
+Léger : seuls les posts les plus directs sont filtrés.
+
+Modéré : filtrage plus large des injonctions.
+
+Agressif : la majorité des posts au ton impératif ou tutoyant sont masqués.
+
+Le filtrage s’applique instantanément sur votre fil LinkedIn, y compris lors du scroll infini ou du rechargement de la page.
+
+Personnalisation avancée
+Pour modifier les mots-clés associés à chaque niveau de filtrage :
+
+Ouvrez le fichier content.js.
+
+Modifiez les listes dans la variable filterLevels selon vos préférences.
 
 Limitations
-Le filtrage se fait par mots-clés : certains posts peuvent être masqués à tort ou à raison.
+Le filtrage repose sur la détection de mots-clés : certains posts peuvent être masqués à tort ou à raison.
 
 L’extension fonctionne uniquement sur la page d’accueil du fil LinkedIn.
 
@@ -38,14 +67,15 @@ Peut nécessiter des ajustements si LinkedIn modifie la structure de son site.
 
 Contribuer
 Les contributions sont les bienvenues !
-N’hésite pas à ouvrir une issue ou une pull request pour proposer des améliorations (ajout de paramètres, meilleure détection, compatibilité Firefox, etc.).
+N’hésitez pas à ouvrir une issue ou une pull request pour proposer des améliorations (interface plus avancée, compatibilité Firefox, filtrage par IA, etc.).
 
 Licence
 MIT
 
 Remerciements
 Merci à la communauté des utilisateurs LinkedIn qui souhaitent un fil plus agréable et respectueux !
+Extension inspirée par les besoins réels des utilisateurs francophones.
 
-Bon nettoyage de feed ! 🚀
+Profitez d’un feed LinkedIn qui vous ressemble ! 🚀
 
-Si tu veux personnaliser le texte, le nom du repo ou ajouter des captures d’écran, n’hésite pas à me le demander 
+Si tu veux ajouter des captures d’écran ou des exemples d’utilisation, je peux t’aider à les intégrer !
